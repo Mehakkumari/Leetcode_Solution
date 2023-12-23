@@ -1,0 +1,16 @@
+var isPalindrome = function(x) {
+    let a=x;
+    let b;
+    let store = 0;
+        while(a>0){
+        b=a%10;
+        a=Math.floor(a/10);
+        store = store*10+b;
+        }
+    if(store===x){
+    return true;
+    }
+    else{
+    return false;
+    }
+    }
